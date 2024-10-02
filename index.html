@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="nav">
+            <div class="heading">
+                <a href="#">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    Shopping Cart</a>
+            </div>
+
+            <div class="box">
+                <div class="cart-count">0</div>
+                <p class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></p>
+            </div>
+            <!-- side cart  -->
+
+            <div class="cart">
+                <div class="x-close"><i class="fa-solid fa-x"></i></div>
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+
+
+
+
+                    <!-- oru food cart  -->
+                    <!-- <div class="cart-box">
+                        <img class="cart-img"
+                            src="https://img.freepik.com/free-photo/delicious-ice-cream-outdoors_23-2150735436.jpg?t=st=1720157179~exp=1720160779~hmac=cc621e61dc0353f825fcd0d2216552ff9bf4107fbc6a49faa50ac3a645defc27&w=740" />
+                        <div class="datile-box">
+                            <div class="cart-food-title">Starwberry Icecream</div>
+                            <div class="price-box">
+                                <div class="cart-price">70</div>
+                                <div class="cart-amt">Rs70</div>
+                            </div>
+                            <input type="number" name="" value="1" class="cart-quality" id="">
+                        </div>
+                        <div class="cart-delete"><i class="fa-solid fa-trash"></i></i></div>
+                    </div> -->
+                    <!-- oru food cart  -->
+
+
+
+
+
+
+                </div>
+                <div class="cart-total">
+                    <div class="totall">Total: </div>
+                    <div class="total-price"></div>
+                </div>
+                <button class="place-order">Place Order</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- cart  -->
+    <div class="container">
+        <h1>Discover the Best Food</h1>
+        <form action="" class="product-search">
+            <input type="text" name="" id="filter" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <!-- <input type="text" name="" id="filter" placeholder="Search Your Favouries"> -->
+
+        <div class="buttons">
+            <button class="btns titles" data-name="all">Show all</button>
+            <button class="titles"  data-name="icecreame">Icecreames</button>
+            <button class="titles" data-name="milkshake">Milkshakes</button>
+            <button class="titles" data-name="falooda">Faloodas</button>
+            <button class="titles" data-name="cake">Cakes</button>
+            <button class="titles" data-name="juice">Juices</button>
+
+        </div>
+
+
+        <div class="hole-shop-container">
+            <div class="shop-container" id="shop">
+
+                <!-- items  -->
+                <div class="food-box " data-name="icecreame">
+                    <div class="pic">
+                        <img src="https://img.freepik.com/free-photo/delicious-ice-cream-outdoors_23-2150735436.jpg?t=st=1720157179~exp=1720160779~hmac=cc621e61dc0353f825fcd0d2216552ff9bf4107fbc6a49faa50ac3a645defc27&w=740"
+                            class="food-img" alt="" srcset="">
+                    </div>
+                    <h3 class="foot-title">Cholocate Ice creame</h3>
+                    <div class="rupees">
+                        <p>Rs.</p>
+                        <span class="foot-price">50</span>
+                    </div>
+                    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+                </div>
+
+                <div class="food-box "data-name="milkshake">
+                    <div class="pic">
+                        <img src="https://i.pinimg.com/736x/9b/a0/f9/9ba0f9e9eeefc1470c6dae16492ba9b3.jpg"
+                            class="food-img" alt="" srcset="">
+                    </div>
+                    <h3 class="foot-title">Mango Milkshake</h3>
+                    <div class="rupees">
+                        <p>Rs.</p>
+                        <span class="foot-price">120</span>
+                    </div>
+                    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+                
+                </div>
+
+                <div class="food-box "data-name="falooda">
+                    <div class="pic">
+                        <img src="https://as2.ftcdn.net/v2/jpg/07/74/57/43/1000_F_774574307_fvQnFvGlvuGHurSDpwJW94LeHQUc12ox.jpg"
+                            class="food-img" alt="" srcset="">
+                    </div>
+                    <h3 class="foot-title">Rose Falooda</h3>
+                    <div class="rupees">
+                        <p>Rs.</p>
+                        <span class="foot-price">130</span>
+                    </div>
+                    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+                </div>
+                
+<div class="food-box "data-name="cake">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/delicious-cake-with-fruits_23-2150727605.jpg?t=st=1720884584~exp=1720888184~hmac=5474cc56b2e4f7b6521e3968622ae4f1f9d281a76b26fd97832496cb315ec48f&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Sponge Cake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">150</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="juice">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/glass-apple-cider-glass-cinnamon-sticks_1340-43256.jpg?t=st=1720883259~exp=1720886859~hmac=74e0f5a84a55067c1d746893b0ef8d37ab41958395612bddb94eade5fb865524&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Apple Juice</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">50</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="icecreame">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/delicious-ice-cream-with-biscuits-bowl_23-2150796482.jpg?t=st=1720947322~exp=1720950922~hmac=64befc07a84aed1ebefe997bceb1e112b0c7d1adf14e12a6c9fabd6305431fdb&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Oreo Ice creame</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">90</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+
+</div>
+
+<div class="food-box "data-name="milkshake">
+    <div class="pic">
+        <img class="food-img"
+            src="https://i.pinimg.com/564x/5a/a4/48/5aa44866756be65098f263a6e0159705.jpg"
+            alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Candy Milkshake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">170</span>
+    </div>
+
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+
+</div>
+
+<div class="food-box "data-name="falooda">
+    <div class="pic">
+        <img src="https://i.pinimg.com/564x/2f/82/d2/2f82d2fe939829308d990310442deb94.jpg"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Royal Falooda</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">110</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="cake">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/3d-design-delicious-wedding-cake_23-2151109510.jpg?t=st=1720884772~exp=1720888372~hmac=a5a36ca73bcf53fc0743ed86765bc058012ceb847d44d7920516c01650494850&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Blueberry Cake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">200</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="juice">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/watermelon-smoothie-with-ice-cubes-glass_114579-3611.jpg?t=st=1720883654~exp=1720887254~hmac=10cc67d58de1679551053d324662af93bc9801b59020d27037cdce2d5753e752&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Watermelon Juice</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">20</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box " data-name="icecreame">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/delicious-ice-cream-with-topping_23-2150735434.jpg?t=st=1720949546~exp=1720953146~hmac=34e0b3e7319459f1adda9bb015f5d4a16cad62683807899716e5e8d371cf1606&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Mango Ice creame</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">50</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="milkshake">
+    <div class="pic">
+        <img class="food-img"
+            src="https://as2.ftcdn.net/v2/jpg/08/54/36/17/1000_F_854361769_SeFpNliCkxneQpDN7EU124S1ZxriDW5f.jpg"
+            alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Oreo Milkshake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">150</span>
+    </div>
+
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+
+</div>
+
+<div class="food-box "data-name="falooda">
+    <div class="pic">
+        <img src="https://i.pinimg.com/564x/41/a1/1f/41a11f77b1f3607e44c0068c512ec8e9.jpg"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Dlise Falooda</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">100</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="cake">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/delicious-cupcakes-with-strawberries_23-2150798034.jpg?t=st=1720885194~exp=1720888794~hmac=3ae02e1f70d5c5e2bf5098c2358542be8153eccfc82ae091af757e56e2496105&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Cup Cake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">100</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+                
+<div class="food-box "data-name="juice">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/delicious-banana-milkshake_144627-5653.jpg?t=st=1720883938~exp=1720887538~hmac=303393ec7f9ed9b99b299da066e51ea8e15d89d6a7f646d1ded9ec0dbb259d11&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Banana Juice</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">40</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="milkshake">
+    <div class="pic">
+        <img class="food-img"
+            src="https://i.pinimg.com/564x/db/0e/17/db0e179bf32d4ebcbf252228de898832.jpg"
+            alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Craziest Milkshake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">100</span>
+    </div>
+
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+
+</div>
+
+<div class="food-box "data-name="icecreame">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/chocolate-ice-cream-with-mint-chocolate-chips-black-background_1142-42938.jpg?t=st=1720949826~exp=1720953426~hmac=750d44a1d6f01f9748e62968e365d824ba747de271701aa514a3f5b77f92ff85&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Pista Ice creame</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">80</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+
+</div>
+
+<div class="food-box "data-name="falooda">
+    <div class="pic">
+        <img src="https://i.pinimg.com/564x/27/fd/10/27fd10a713de7863ea50d13637672b09.jpg"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Butter Scotch Falooda</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">150</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="cake">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/delicious-cake-with-biscuits_23-2150661151.jpg?t=st=1720885456~exp=1720889056~hmac=9630738639864f9d9fc92c5f0970e08de57bd7073f7818b950a7c66367abdb12&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Oreo Cake</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">300</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+<div class="food-box "data-name="juice">
+    <div class="pic">
+        <img src="https://img.freepik.com/free-photo/elegant-wine-bottle-cup-with-grapes-generative-ai_188544-8088.jpg?t=st=1720884149~exp=1720887749~hmac=953abdeb6e975fb6661f784a489cb9e3e5a0f1d7cc3ba69426eefe885793b861&w=740"
+            class="food-img" alt="" srcset="">
+    </div>
+    <h3 class="foot-title">Grape Juice</h3>
+    <div class="rupees">
+        <p>Rs.</p>
+        <span class="foot-price">60</span>
+    </div>
+    <p class="add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping "></i></p>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
